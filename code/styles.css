@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CSS VARIABLES */
+:root {
+  --teal: #3ee9e5;
+  --white: #ffffff;
+  --blue: #093f68;
+  --dark-blue: #080c20;
+  --gray: #777f98;
+  --red: #ff2965;
+}
+
+/************* DESKTOP VIEW *************/
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: "Monrope", sans-serif;
+  background-color: var(--dark-blue);
+}
+
+header {
+  position: relative;
+}
+
+/* DESKTOP NAV */
+nav {
+  margin-bottom: 114px;
+}
+
+nav img {
+  height: 35px;
+  margin-top: 80px;
+  margin-left: 165px;
+}
+
+section {
+  position: relative;
+}
+
+/* DESKTOP BANNER */
+.banner {
+  /* overflow: hidden; */
+  max-width: 1440px;
+  display: flex;
+  justify-content: flex-start;
+  width: 100vw;
+  position: absolute;
+}
+
+.banner svg:nth-of-type(1) {
+  margin-right: 40px;
+}
+
+.banner svg:nth-of-type(2) {
+  margin-right: 40px;
+}
+
+.banner-txt {
+  position: absolute;
+  margin-left: 30%;
+  margin-right: 30%;
+  text-align: center;
+  z-index: 10;
+  padding-top: 90px;
+}
+
+.banner-txt h1 {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 56px;
+  color: var(--white);
+}
+
+.banner-txt span {
+  color: var(--teal);
+}
+
+.banner-txt p {
+  color: var(--gray);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  padding-top: 25px;
+  padding-bottom: 65px;
+}
+
+/************* TABLET VIEW *************/
+@media screen and (max-width: 769px) {
+  /* TABLET HEADER */
+  header {
+    /* position: relative; */
+  }
+
+  /* TABLET NAV */
+  nav {
+    margin-bottom: 77px;
+  }
+  nav img {
+    margin-top: 50px;
+    margin-left: 40px;
+  }
+
+  /* TABLET BANNER */
+  .banner svg:nth-of-type(1) {
+    margin-right: 40px;
+  }
+
+  .banner svg:nth-of-type(2) {
+    margin-right: 40px;
+  }
+
+  .banner-txt {
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-top: 0;
+  }
+
+  .banner-txt h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .banner-txt p {
+    padding-bottom: 32px;
+  }
+}
+
+/************* MOBILE VIEW *************/
+@media screen and (max-width: 375px) {
+  /* MOBILE NAV */
+  nav {
+    display: flex;
+    justify-content: center;
+    /* margin-top: 48px; */
+    /* margin-left: 40px; */
+  }
+
+  /* MOBILE BANNER */
+  .banner svg:nth-of-type(1) {
+    margin-right: 0;
+  }
+
+  .banner svg:nth-of-type(2) {
+    display: none;
+    margin-right: 0;
+  }
+
+  .banner-txt {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 250px;
+  }
+
+  .banner-txt h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
