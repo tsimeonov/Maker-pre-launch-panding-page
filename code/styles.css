@@ -77,7 +77,6 @@ section {
   margin-right: auto;
   text-align: center;
   z-index: 10;
-  /* padding-top: 10%; */
 }
 
 .banner-txt h1 {
@@ -100,12 +99,11 @@ section {
   padding-bottom: 45px;
 }
 
-/* INFO-SECTION  */
+/* DESKTOP INFO-SECTION  */
 
 .info-section {
-  /* min-width: 1000px; */
   width: 90%;
-  margin: 720px 70px 0 70px;
+  margin: 60% 70px 0 70px;
   display: flex;
   align-items: flex-start;
   text-align: left;
@@ -146,6 +144,144 @@ section {
   color: var(--gray);
 }
 
+/* DESKTOP PRICE-SECTION  */
+.price-txt {
+  margin-top: 15%;
+  width: 43%;
+  /* Center the price-txt horizontally */
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.price-txt h2 {
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 44px;
+  color: var(--white);
+}
+
+.price-txt p {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--gray);
+}
+
+.price-tiers {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 72px;
+}
+
+.free-price-tier {
+  position: relative;
+  width: 33%;
+  padding: 50px 40px;
+  background-color: var(--blue);
+  border-radius: 8px;
+}
+
+.free-price-tier > svg {
+  position: absolute;
+  top: -5%;
+}
+
+.free-price-tier h3 {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--white);
+  margin-bottom: 19px;
+}
+
+.free-price-tier > p {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--white);
+  margin-bottom: 24px;
+}
+
+.free-price-tier h4 {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 55px;
+  color: var(--white);
+  margin-bottom: 19px;
+}
+
+.free-price-tiers-features div {
+  display: flex;
+  align-items: center;
+}
+
+.free-price-tiers-features p {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--white);
+  margin-left: 15px;
+}
+
+.paid-price-tier {
+  position: relative;
+  width: 33%;
+  padding: 48px 38px;
+  background-color: var(--teal);
+  border-radius: 8px;
+}
+
+.paid-price-tier > svg {
+  position: absolute;
+  top: -9%;
+}
+
+.paid-price-tier h3 {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--dark-blue);
+  margin-bottom: 19px;
+}
+
+.paid-price-tier > p {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--dark-blue);
+  margin-bottom: 24px;
+}
+
+.paid-price-tier h4 {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 55px;
+  color: var(--dark-blue);
+  margin-bottom: 19px;
+}
+
+.paid-price-tier span {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.paid-price-tiers-features div {
+  display: flex;
+  align-items: center;
+}
+
+.paid-price-tiers-features p {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--dark-blue);
+  margin-left: 15px;
+}
+
 /************* TABLET VIEW *************/
 @media screen and (max-width: 768px) {
   /* TABLET NAV */
@@ -183,7 +319,6 @@ section {
 
   /* TABLET INFO-SECTION  */
   .info-section {
-    /* min-width: 0; */
     flex-direction: column;
     margin: 430px 40px 0 40px;
   }
@@ -224,8 +359,31 @@ section {
   .txt-info h3 {
     margin-bottom: 10px;
   }
-}
 
+  /* TABLET PRICE-SECTION  */
+  .price-txt {
+    width: 68%;
+  }
+
+  .price-txt h2 {
+    font-size: 24px;
+    line-height: 33px;
+  }
+
+  .price-tiers {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .free-price-tier {
+    width: 58%;
+    margin-bottom: 65px;
+  }
+
+  .paid-price-tier {
+    width: 58%;
+  }
+}
 /************* MOBILE VIEW *************/
 @media screen and (max-width: 375px) {
   body {
@@ -253,7 +411,7 @@ section {
 
   .banner-txt {
     margin-top: 250px;
-    width: 75%;
+    width: 90%;
   }
 
   .banner-txt h1 {
@@ -282,7 +440,28 @@ section {
     margin-right: 0;
   }
 
+  .txt-info {
+    width: 90%;
+  }
+
   .txt-info h3 {
     margin-top: 32px;
+  }
+
+  /* MOBILE PRICE-SECTION  */
+  .price-txt {
+    width: 90%;
+  }
+
+  .price-txt h2 {
+    margin-bottom: 27px;
+  }
+
+  .free-price-tier {
+    width: 90%;
+  }
+
+  .paid-price-tier {
+    width: 90%;
   }
 }
