@@ -26,17 +26,19 @@ body {
 
 header {
   position: relative;
+  width: 100%;
 }
 
 /* DESKTOP NAV */
 nav {
   margin-bottom: 114px;
+  width: 100%;
 }
 
 nav img {
   height: 35px;
   margin-top: 80px;
-  margin-left: 100px;
+  margin-left: 70px;
 }
 
 section {
@@ -66,11 +68,16 @@ section {
 
 .banner-txt {
   position: absolute;
-  margin-left: 30%;
-  margin-right: 30%;
+  width: 40%;
+  margin-top: 5%;
+  /* Center the banner-txt horizontally */
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   z-index: 10;
-  padding-top: 90px;
+  /* padding-top: 10%; */
 }
 
 .banner-txt h1 {
@@ -90,14 +97,15 @@ section {
   font-size: 15px;
   line-height: 25px;
   padding-top: 25px;
-  padding-bottom: 65px;
+  padding-bottom: 45px;
 }
 
 /* INFO-SECTION  */
 
 .info-section {
-  min-width: 1000px;
-  margin: 720px 100px 0 100px;
+  /* min-width: 1000px; */
+  width: 90%;
+  margin: 720px 70px 0 70px;
   display: flex;
   align-items: flex-start;
   text-align: left;
@@ -140,9 +148,6 @@ section {
 
 /************* TABLET VIEW *************/
 @media screen and (max-width: 768px) {
-  body {
-    min-width: 700px;
-  }
   /* TABLET NAV */
   nav {
     margin-bottom: 77px;
@@ -162,8 +167,7 @@ section {
   }
 
   .banner-txt {
-    margin-left: 25%;
-    margin-right: 25%;
+    width: 54%;
     padding-top: 0;
   }
 
@@ -179,7 +183,7 @@ section {
 
   /* TABLET INFO-SECTION  */
   .info-section {
-    min-width: 0;
+    /* min-width: 0; */
     flex-direction: column;
     margin: 430px 40px 0 40px;
   }
@@ -196,7 +200,7 @@ section {
   }
 
   .info-sections:nth-of-type(odd) {
-    margin-left: 100px;
+    margin-left: 7%;
   }
 
   .svg-info {
@@ -214,7 +218,7 @@ section {
   }
 
   .txt-info {
-    width: 290px;
+    width: 51%;
   }
 
   .txt-info h3 {
@@ -233,6 +237,10 @@ section {
     justify-content: center;
   }
 
+  nav img {
+    margin-left: 0;
+  }
+
   /* MOBILE BANNER */
   .banner svg:nth-of-type(1) {
     margin-right: 0;
@@ -244,9 +252,8 @@ section {
   }
 
   .banner-txt {
-    margin-left: 10%;
-    margin-right: 10%;
     margin-top: 250px;
+    width: 75%;
   }
 
   .banner-txt h1 {
@@ -257,6 +264,7 @@ section {
   /* MOBILE INFO-SECTION  */
 
   .info-section {
+    width: 100%;
     margin: 700px 20px 20px 0;
     text-align: center;
   }
