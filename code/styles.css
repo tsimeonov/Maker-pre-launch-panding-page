@@ -182,6 +182,13 @@ section {
   padding: 50px 40px;
   background-color: var(--blue);
   border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.free-price-tier:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
 }
 
 .free-price-tier > svg {
@@ -232,6 +239,13 @@ section {
   padding: 48px 38px;
   background-color: var(--teal);
   border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.paid-price-tier:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
 }
 
 .paid-price-tier > svg {
@@ -280,6 +294,87 @@ section {
   line-height: 25px;
   color: var(--dark-blue);
   margin-left: 15px;
+}
+
+/* DESKTOP FOOTER  */
+footer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 150px 0 0 0;
+  padding: 0 0 160px 0;
+  z-index: 10;
+}
+
+footer > svg {
+  position: absolute;
+  width: 100vw;
+  top: -10%;
+  z-index: -1;
+}
+
+footer h3 {
+  margin-bottom: 42px;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 44px;
+  color: var(--white);
+  text-align: center;
+}
+
+.footer-form {
+  display: flex;
+  align-items: flex-start;
+}
+
+input[type="text"] {
+  width: 20em;
+  background: #093f68;
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 25px;
+  border: none;
+  color: var(--white);
+  border-radius: 24px;
+  padding: 12px 0 12px 18px;
+  margin: 0 16px 0 0;
+}
+
+input[type="text"]:focus {
+  outline-style: none;
+  box-shadow: none;
+  border-color: transparent;
+}
+
+.footer-form button {
+  background-color: #3ee9e5;
+  border: none;
+  border-radius: 24px;
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--dark-blue);
+  padding: 12px 18px;
+  transition: all 0.5s ease-in-out;
+}
+
+.footer-form button:hover {
+  cursor: pointer;
+  border: 1px solid var(--teal);
+  background-color: var(--dark-blue);
+  color: var(--white);
+  transition: all 0.5s ease-in-out;
+}
+
+.input-form p {
+  display: none;
+  margin-top: 5px;
+  color: red;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 25px;
+  padding-left: 20px;
 }
 
 /************* TABLET VIEW *************/
@@ -383,6 +478,16 @@ section {
   .paid-price-tier {
     width: 58%;
   }
+
+  /* TABLET FOOTER  */
+  footer {
+    margin-top: 120px;
+  }
+  footer h3 {
+    font-size: 24px;
+    line-height: 33px;
+    margin-bottom: 30px;
+  }
 }
 /************* MOBILE VIEW *************/
 @media screen and (max-width: 375px) {
@@ -463,5 +568,33 @@ section {
 
   .paid-price-tier {
     width: 90%;
+  }
+
+  /* MOBILE FOOTER  */
+  footer {
+    width: 95%;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+  footer h3 {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 140px;
+    margin-bottom: 30px;
+  }
+
+  .footer-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  input[type="text"] {
+    width: 100%;
+
+    padding: 12px 0 12px 18px;
+  }
+
+  .footer-form button {
+    margin-top: 20px;
   }
 }
