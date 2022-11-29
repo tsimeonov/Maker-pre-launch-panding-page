@@ -1,7 +1,5 @@
 # Maker pre-launch landing page
 
-(./preview.jpg)
-
 ## Overview
 
 ### The challenge
