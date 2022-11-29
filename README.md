@@ -20,9 +20,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: https://tsimeonov.github.io/Advice-Generator-App/
-
-## My process
+- Live Site URL: https://tsimeonov.github.io/Maker-pre-launch-panding-page/code
 
 ### Built with
 
